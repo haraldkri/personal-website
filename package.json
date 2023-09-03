@@ -1,6 +1,6 @@
 {
   "name": "harald-kriebisch-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && firebase deploy",
-    "publish": "npm run deploy && npm version patch -m \"New version published: %s\" && git push && git push --tags"
+    "publish": "npm run deploy && npm version patch -fm \"New version published: %s\" && git push && git push --tags"
   },
   "eslintConfig": {
     "extends": [
