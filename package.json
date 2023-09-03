@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && firebase deploy",
-    "publish": "npm run deploy && npm version patch -fm \"New version published: %s\" && git push && git push --tags"
+    "publish": "npm run deploy && git add . && git commit -m \"new version published\" && npm version patch -m \"v%s\" && git push && git push --tags"
   },
   "eslintConfig": {
     "extends": [
